@@ -1,0 +1,10 @@
+^D:\AMR\SOCIGATE\SOCIGATE_SYSTEM\BUILD\WINDOWS\X64\CMAKEFILES\D9F73D8E5DB9BC124F6B3D7DF94F06C8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Amr/Socigate/socigate_system/windows -BD:/Amr/Socigate/socigate_system/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Amr/Socigate/socigate_system/build/windows/x64/socigate_system.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
